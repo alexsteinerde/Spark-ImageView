@@ -68,7 +68,7 @@ class Spark: UIView {
 // MARK: create
 extension Spark{
     
-    class func createSpark(_ faveButton: FaveButton, radius: CGFloat, firstColor: UIColor, secondColor: UIColor, angle: Double, dotRadius: DotRadius) -> Spark{
+    class func createSpark(_ faveButton: SparkImageView, radius: CGFloat, firstColor: UIColor, secondColor: UIColor, angle: Double, dotRadius: DotRadius) -> Spark{
         
         let spark = Init(Spark(radius: radius, firstColor: firstColor, secondColor: secondColor, angle: angle, dotRadius: dotRadius)){
             $0.translatesAutoresizingMaskIntoConstraints = false

@@ -7,19 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		261A6A221D1DF8DB0040EBBC /* FaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A191D1DF8DB0040EBBC /* FaveButton.swift */; };
-		261A6A231D1DF8DB0040EBBC /* FaveIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A1A1D1DF8DB0040EBBC /* FaveIcon.swift */; };
-		261A6A241D1DF8DB0040EBBC /* Constraints+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A1C1D1DF8DB0040EBBC /* Constraints+.swift */; };
-		261A6A251D1DF8DB0040EBBC /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A1D1D1DF8DB0040EBBC /* Easing.swift */; };
-		261A6A261D1DF8DB0040EBBC /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A1E1D1DF8DB0040EBBC /* Geometry.swift */; };
-		261A6A271D1DF8DB0040EBBC /* Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A1F1D1DF8DB0040EBBC /* Init.swift */; };
-		261A6A281D1DF8DB0040EBBC /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A201D1DF8DB0040EBBC /* Ring.swift */; };
-		261A6A291D1DF8DB0040EBBC /* Spark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A211D1DF8DB0040EBBC /* Spark.swift */; };
 		261A6A2A1D1DF9050040EBBC /* Constraints+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A1C1D1DF8DB0040EBBC /* Constraints+.swift */; };
 		261A6A2B1D1DF9050040EBBC /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A1D1D1DF8DB0040EBBC /* Easing.swift */; };
 		261A6A2C1D1DF9050040EBBC /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A1E1D1DF8DB0040EBBC /* Geometry.swift */; };
 		261A6A2D1D1DF9050040EBBC /* Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A1F1D1DF8DB0040EBBC /* Init.swift */; };
-		261A6A2E1D1DF9050040EBBC /* FaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A191D1DF8DB0040EBBC /* FaveButton.swift */; };
+		261A6A2E1D1DF9050040EBBC /* SparkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A191D1DF8DB0040EBBC /* SparkImageView.swift */; };
 		261A6A2F1D1DF9050040EBBC /* FaveIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A1A1D1DF8DB0040EBBC /* FaveIcon.swift */; };
 		261A6A301D1DF9050040EBBC /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A201D1DF8DB0040EBBC /* Ring.swift */; };
 		261A6A311D1DF9050040EBBC /* Spark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261A6A211D1DF8DB0040EBBC /* Spark.swift */; };
@@ -28,30 +20,30 @@
 		26FEF32E1D0E158100D75731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26FEF32C1D0E158100D75731 /* Main.storyboard */; };
 		26FEF3301D0E158100D75731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26FEF32F1D0E158100D75731 /* Assets.xcassets */; };
 		26FEF3331D0E158100D75731 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26FEF3311D0E158100D75731 /* LaunchScreen.storyboard */; };
-		26FEF3421D0E159B00D75731 /* FaveButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 26FEF3411D0E159B00D75731 /* FaveButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26FEF3461D0E159B00D75731 /* SparkImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FEF33F1D0E159B00D75731 /* SparkImageView.framework */; };
-		26FEF3471D0E159B00D75731 /* SparkImageView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26FEF33F1D0E159B00D75731 /* SparkImageView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		26FEF3421D0E159B00D75731 /* SparkImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 26FEF3411D0E159B00D75731 /* SparkImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26FEF34F1D0E177900D75731 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FEF34E1D0E177900D75731 /* ImageAsset.swift */; };
+		FAC0B9601E93D1660008A398 /* SparkImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FEF33F1D0E159B00D75731 /* SparkImageView.framework */; };
+		FAC0B9611E93D1660008A398 /* SparkImageView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26FEF33F1D0E159B00D75731 /* SparkImageView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		26FEF3441D0E159B00D75731 /* PBXContainerItemProxy */ = {
+		FAC0B9621E93D1660008A398 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 26FEF31D1D0E158100D75731 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 26FEF33E1D0E159B00D75731;
-			remoteInfo = FaveButton;
+			remoteInfo = SparkImageView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		26FEF34B1D0E159B00D75731 /* Embed Frameworks */ = {
+		FAC0B9641E93D1660008A398 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				26FEF3471D0E159B00D75731 /* SparkImageView.framework in Embed Frameworks */,
+				FAC0B9611E93D1660008A398 /* SparkImageView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,7 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		261A6A191D1DF8DB0040EBBC /* FaveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaveButton.swift; sourceTree = "<group>"; };
+		261A6A191D1DF8DB0040EBBC /* SparkImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparkImageView.swift; sourceTree = "<group>"; };
 		261A6A1A1D1DF8DB0040EBBC /* FaveIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaveIcon.swift; sourceTree = "<group>"; };
 		261A6A1C1D1DF8DB0040EBBC /* Constraints+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Constraints+.swift"; sourceTree = "<group>"; };
 		261A6A1D1D1DF8DB0040EBBC /* Easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
@@ -75,7 +67,7 @@
 		26FEF3321D0E158100D75731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26FEF3341D0E158100D75731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26FEF33F1D0E159B00D75731 /* SparkImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SparkImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		26FEF3411D0E159B00D75731 /* FaveButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaveButton.h; sourceTree = "<group>"; };
+		26FEF3411D0E159B00D75731 /* SparkImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparkImageView.h; sourceTree = "<group>"; };
 		26FEF3431D0E159B00D75731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26FEF34E1D0E177900D75731 /* ImageAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26FEF3461D0E159B00D75731 /* SparkImageView.framework in Frameworks */,
+				FAC0B9601E93D1660008A398 /* SparkImageView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				261A6A1B1D1DF8DB0040EBBC /* Helpers */,
-				261A6A191D1DF8DB0040EBBC /* FaveButton.swift */,
+				261A6A191D1DF8DB0040EBBC /* SparkImageView.swift */,
 				261A6A1A1D1DF8DB0040EBBC /* FaveIcon.swift */,
 				261A6A201D1DF8DB0040EBBC /* Ring.swift */,
 				261A6A211D1DF8DB0040EBBC /* Spark.swift */,
@@ -159,7 +151,7 @@
 		26FEF3401D0E159B00D75731 /* FaveButton */ = {
 			isa = PBXGroup;
 			children = (
-				26FEF3411D0E159B00D75731 /* FaveButton.h */,
+				26FEF3411D0E159B00D75731 /* SparkImageView.h */,
 				26FEF3431D0E159B00D75731 /* Info.plist */,
 			);
 			path = FaveButton;
@@ -180,7 +172,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26FEF3421D0E159B00D75731 /* FaveButton.h in Headers */,
+				26FEF3421D0E159B00D75731 /* SparkImageView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,12 +186,12 @@
 				26FEF3211D0E158100D75731 /* Sources */,
 				26FEF3221D0E158100D75731 /* Frameworks */,
 				26FEF3231D0E158100D75731 /* Resources */,
-				26FEF34B1D0E159B00D75731 /* Embed Frameworks */,
+				FAC0B9641E93D1660008A398 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				26FEF3451D0E159B00D75731 /* PBXTargetDependency */,
+				FAC0B9631E93D1660008A398 /* PBXTargetDependency */,
 			);
 			name = SparkImageViewDemo;
 			productName = FaveButtonDemo;
@@ -237,11 +229,12 @@
 					26FEF3241D0E158100D75731 = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					26FEF33E1D0E159B00D75731 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 9T9Q2EVV88;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -289,15 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				261A6A271D1DF8DB0040EBBC /* Init.swift in Sources */,
-				261A6A221D1DF8DB0040EBBC /* FaveButton.swift in Sources */,
-				261A6A241D1DF8DB0040EBBC /* Constraints+.swift in Sources */,
 				26FEF32B1D0E158100D75731 /* ViewController.swift in Sources */,
-				261A6A231D1DF8DB0040EBBC /* FaveIcon.swift in Sources */,
-				261A6A261D1DF8DB0040EBBC /* Geometry.swift in Sources */,
-				261A6A281D1DF8DB0040EBBC /* Ring.swift in Sources */,
-				261A6A251D1DF8DB0040EBBC /* Easing.swift in Sources */,
-				261A6A291D1DF8DB0040EBBC /* Spark.swift in Sources */,
 				26FEF34F1D0E177900D75731 /* ImageAsset.swift in Sources */,
 				26FEF3291D0E158100D75731 /* AppDelegate.swift in Sources */,
 			);
@@ -311,7 +296,7 @@
 				261A6A2B1D1DF9050040EBBC /* Easing.swift in Sources */,
 				261A6A2C1D1DF9050040EBBC /* Geometry.swift in Sources */,
 				261A6A2D1D1DF9050040EBBC /* Init.swift in Sources */,
-				261A6A2E1D1DF9050040EBBC /* FaveButton.swift in Sources */,
+				261A6A2E1D1DF9050040EBBC /* SparkImageView.swift in Sources */,
 				261A6A2F1D1DF9050040EBBC /* FaveIcon.swift in Sources */,
 				261A6A301D1DF9050040EBBC /* Ring.swift in Sources */,
 				261A6A311D1DF9050040EBBC /* Spark.swift in Sources */,
@@ -321,10 +306,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		26FEF3451D0E159B00D75731 /* PBXTargetDependency */ = {
+		FAC0B9631E93D1660008A398 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 26FEF33E1D0E159B00D75731 /* SparkImageView */;
-			targetProxy = 26FEF3441D0E159B00D75731 /* PBXContainerItemProxy */;
+			targetProxy = FAC0B9621E93D1660008A398 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -450,6 +435,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.alexsteiner.SparkImageViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -468,6 +454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.alexsteiner.SparkImageViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -476,9 +463,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -488,6 +477,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.alexsteiner.SparkImageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -501,9 +491,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -513,6 +505,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.alexsteiner.SparkImageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -26,19 +26,7 @@ import UIKit
 
 public typealias DotColors = (first: UIColor, second: UIColor)
 
-public protocol FaveButtonDelegate{
-    func faveButton(_ faveButton: FaveButton, didSelected selected: Bool)
-    
-    func faveButtonDotColors(_ faveButton: FaveButton) -> [DotColors]?
-}
-
-
-// MARK: Default implementation
-public extension FaveButtonDelegate{
-    func faveButtonDotColors(_ faveButton: FaveButton) -> [DotColors]?{ return nil }
-}
-
-open class FaveButton: UIImageView {
+open class SparkImageView: UIImageView {
     
     fileprivate struct Const{
         static let expandDuration       = 0.1298
@@ -67,7 +55,7 @@ open class FaveButton: UIImageView {
 
 
 // MARK: create
-extension FaveButton{
+extension SparkImageView {
     
     
     fileprivate func createSparks(_ radius: CGFloat) -> [Spark] {
@@ -91,21 +79,15 @@ extension FaveButton{
 
 
 // MARK: utils
-extension FaveButton{
+extension SparkImageView {
     fileprivate func dotColors(atIndex index: Int) -> DotColors{
-        if case let delegate as FaveButtonDelegate = delegate , nil != delegate.faveButtonDotColors(self){
-            let colors     = delegate.faveButtonDotColors(self)!
-            let colorIndex = 0..<colors.count ~= index ? index : index % colors.count
-            
-            return colors[colorIndex]
-        }
         return DotColors(self.dotFirstColor, self.dotSecondColor)
     }
 }
 
 
 // MARK: animation
-extension FaveButton{
+extension SparkImageView {
     public func animate(withDuration duration: Double, completion: (()->Void)?){
         let radius           = bounds.size.scaleBy(1.3).width/2 // ring radius
         let igniteFromRadius = radius*0.8

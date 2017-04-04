@@ -56,7 +56,7 @@ class Ring: UIView {
 // MARK: create
 extension Ring{
     
-    class func createRing(_ faveButton: FaveButton, radius: CGFloat, lineWidth: CGFloat, fillColor: UIColor) -> Ring{
+    class func createRing(_ faveButton: SparkImageView, radius: CGFloat, lineWidth: CGFloat, fillColor: UIColor) -> Ring{
         
         let ring = Init(Ring(radius: radius, lineWidth:lineWidth, fillColor: fillColor)){
             $0.translatesAutoresizingMaskIntoConstraints = false
