@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
   s.homepage     = 'https://github.com/alexsteinerde/Spark-ImageView'
   s.ios.deployment_target = '8.0'
+  s.author       = { 'Alex Steiner' => 'info@alexsteiner.de' }
   s.source       = { :git => 'https://github.com/alexsteinerde/Spark-ImageView.git', :tag => s.version.to_s }
   s.source_files  = 'Source/**/*.swift'
   s.requires_arc = true

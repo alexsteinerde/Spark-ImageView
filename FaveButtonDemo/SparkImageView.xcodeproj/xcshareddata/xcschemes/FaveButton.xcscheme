@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "26FEF33E1D0E159B00D75731"
-               BuildableName = "FaveButton.framework"
-               BlueprintName = "FaveButton"
+               BuildableName = "SparkImageView.framework"
+               BlueprintName = "SparkImageView"
                ReferencedContainer = "container:SparkImageView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "26FEF33E1D0E159B00D75731"
-            BuildableName = "FaveButton.framework"
-            BlueprintName = "FaveButton"
+            BuildableName = "SparkImageView.framework"
+            BlueprintName = "SparkImageView"
             ReferencedContainer = "container:SparkImageView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "26FEF33E1D0E159B00D75731"
-            BuildableName = "FaveButton.framework"
-            BlueprintName = "FaveButton"
+            BuildableName = "SparkImageView.framework"
+            BlueprintName = "SparkImageView"
             ReferencedContainer = "container:SparkImageView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
