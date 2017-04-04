@@ -21,6 +21,12 @@ func color(_ rgbColor: Int) -> UIColor{
 
 class ViewController: UIViewController, FaveButtonDelegate{
     
+    @IBAction func animate(_ sender: Any) {
+        starView.animate(withDuration: 1, completion: nil)
+    }
+    
+    @IBOutlet weak var starView: FaveButton!
+    
     @IBOutlet var heartButton: FaveButton?
     @IBOutlet var loveButton : FaveButton?
     

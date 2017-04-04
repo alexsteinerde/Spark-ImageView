@@ -1,15 +1,11 @@
-# FaveButton
+# SparkImageView
 
-[![CocoaPods](https://img.shields.io/cocoapods/p/FaveButton.svg)](https://cocoapods.org/pods/FaveButton)
-[![CocoaPods](https://img.shields.io/cocoapods/v/FaveButton.svg)](http://cocoapods.org/pods/FaveButton)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/xhamr/fave-button)
-[![codebeat badge](https://codebeat.co/badges/580517f8-efc8-4d20-89aa-900531610144)](https://codebeat.co/projects/github-com-xhamr-fave-button)
-[![Build Status](https://travis-ci.org/xhamr/fave-button.svg?branch=master)](https://travis-ci.org/xhamr/fave-button)
+[![CocoaPods](https://img.shields.io/cocoapods/p/SparkImageView.svg)](https://cocoapods.org/pods/SparkImageView)
+[![CocoaPods](https://img.shields.io/cocoapods/v/SparkImageView.svg)](http://cocoapods.org/pods/SparkImageView)
 
 Favorite Animated Button written in Swift
 
-
-![preview](https://github.com/xhamr/fave-button/blob/master/fave-button1.gif)
+![preview](https://github.com/alexsteinerde/Spark-ImageView/blob/master/fave-button1.gif)
 
 
 ## Requirements
@@ -24,15 +20,7 @@ For manual instalation, drag Source folder into your project.
 os use [CocoaPod](https://cocoapods.org) adding this line to you `Podfile`:
 
 ```ruby
-pod 'FaveButton', '~> 1.2.1' swift 2.2
-
-pod 'FaveButton', '~> 2.0.3' swift 3
-```
-
-for [Carthage](https://github.com/Carthage/Carthage) users, add this line to you `Cartfile`
-
-```ruby
-github "xhamr/fave-button"
+pod 'FaveButton', '~> 2.1'
 ```
 
 
@@ -49,32 +37,15 @@ github "xhamr/fave-button"
 4) ___Optional___ manipulate porperties to change button settings
 
 ```swift
-@IBInspectable public var normalColor:     UIColor
-@IBInspectable public var selectedColor:   UIColor
 @IBInspectable public var dotFirstColor:   UIColor
 @IBInspectable public var dotSecondColor:  UIColor
 @IBInspectable public var circleFromColor: UIColor
 @IBInspectable public var circleToColor:   UIColor
 ```
- 
- 5) ___Optional___ respond to delegate methods
-
- ```swift
-func faveButton(faveButton: FaveButton, didSelected selected: Bool)    
-func faveButtonDotColors(faveButton: FaveButton) -> [DotColors]?     
- ```
-
 
 #### In Code
 
-```swift
-let faveButton = FaveButton(
-    frame: CGRect(x:200, y:200, width: 44, height: 44),
-    faveIconNormal: UIImage(named: "heart")
-)
-faveButton.delegate = self
-view.addSubview(faveButton)
-```
+Needs to add later.
 
 ## Manipulating dot colors
 

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "26FEF3241D0E158100D75731"
-               BuildableName = "FaveButtonDemo.app"
-               BlueprintName = "FaveButtonDemo"
-               ReferencedContainer = "container:FaveButtonDemo.xcodeproj">
+               BlueprintIdentifier = "26FEF33E1D0E159B00D75731"
+               BuildableName = "FaveButton.framework"
+               BlueprintName = "FaveButton"
+               ReferencedContainer = "container:SparkImageView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "26FEF3241D0E158100D75731"
-            BuildableName = "FaveButtonDemo.app"
-            BlueprintName = "FaveButtonDemo"
-            ReferencedContainer = "container:FaveButtonDemo.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "26FEF3241D0E158100D75731"
-            BuildableName = "FaveButtonDemo.app"
-            BlueprintName = "FaveButtonDemo"
-            ReferencedContainer = "container:FaveButtonDemo.xcodeproj">
+            BlueprintIdentifier = "26FEF33E1D0E159B00D75731"
+            BuildableName = "FaveButton.framework"
+            BlueprintName = "FaveButton"
+            ReferencedContainer = "container:SparkImageView.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "26FEF3241D0E158100D75731"
-            BuildableName = "FaveButtonDemo.app"
-            BlueprintName = "FaveButtonDemo"
-            ReferencedContainer = "container:FaveButtonDemo.xcodeproj">
+            BlueprintIdentifier = "26FEF33E1D0E159B00D75731"
+            BuildableName = "FaveButton.framework"
+            BlueprintName = "FaveButton"
+            ReferencedContainer = "container:SparkImageView.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

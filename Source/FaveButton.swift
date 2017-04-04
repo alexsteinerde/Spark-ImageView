@@ -24,8 +24,6 @@
 
 import UIKit
 
-
-
 public typealias DotColors = (first: UIColor, second: UIColor)
 
 public protocol FaveButtonDelegate{
@@ -40,18 +38,15 @@ public extension FaveButtonDelegate{
     func faveButtonDotColors(_ faveButton: FaveButton) -> [DotColors]?{ return nil }
 }
 
-open class FaveButton: UIButton {
+open class FaveButton: UIImageView {
     
     fileprivate struct Const{
-        static let duration             = 1.0
-        static let expandDuration       = 0.1298 
+        static let expandDuration       = 0.1298
         static let collapseDuration     = 0.1089
         static let faveIconShowDelay    = Const.expandDuration + Const.collapseDuration/2.0
         static let dotRadiusFactors     = (first: 0.0633, second: 0.04)
     }
     
-    @IBInspectable open var normalColor: UIColor     = UIColor(colorLiteralRed: 137/255, green: 156/255, blue: 167/255, alpha: 1)
-    @IBInspectable open var selectedColor: UIColor   = UIColor(colorLiteralRed: 226/255, green: 38/255,  blue: 77/255,  alpha: 1)
     @IBInspectable open var dotFirstColor: UIColor   = UIColor(colorLiteralRed: 152/255, green: 219/255, blue: 236/255, alpha: 1)
     @IBInspectable open var dotSecondColor: UIColor  = UIColor(colorLiteralRed: 247/255, green: 188/255, blue: 48/255,  alpha: 1)
     @IBInspectable open var circleFromColor: UIColor = UIColor(colorLiteralRed: 221/255, green: 70/255,  blue: 136/255, alpha: 1)
@@ -59,28 +54,7 @@ open class FaveButton: UIButton {
     
     @IBOutlet open weak var delegate: AnyObject?
     
-    fileprivate(set) var sparkGroupCount: Int = 7
-    
-    fileprivate var faveIconImage:UIImage?
-    fileprivate var faveIcon: FaveIcon!
-    
-    
-    override open var isSelected: Bool{
-        didSet{
-            animateSelect(self.isSelected, duration: Const.duration)
-        }
-    }
-    
-    convenience public init(frame: CGRect, faveIconNormal: UIImage?) {
-        self.init(frame: frame)
-        
-        guard let icon = faveIconNormal else{
-            fatalError("missing image for normal state")
-        }
-        faveIconImage = icon
-        
-        applyInit()
-    }
+    fileprivate(set) var sparkGroupCount: Int = 9
     
     override public init(frame: CGRect) {
         super.init(frame: frame)
@@ -88,37 +62,12 @@ open class FaveButton: UIButton {
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        applyInit()
     }
 }
 
 
 // MARK: create
 extension FaveButton{
-    fileprivate func applyInit(){
-        
-        if nil == faveIconImage{
-            faveIconImage = image(for: UIControlState())
-        }
-        
-        guard let faveIconImage = faveIconImage else{
-            fatalError("please provide an image for normal state.")
-        }
-        
-        setImage(UIImage(), for: UIControlState())
-        setImage(UIImage(), for: .selected)
-        setTitle(nil, for: UIControlState())
-        setTitle(nil, for: .selected)
-        
-        faveIcon  = createFaveIcon(faveIconImage)
-        
-        addActions()
-    }
-    
-    
-    fileprivate func createFaveIcon(_ faveIconImage: UIImage) -> FaveIcon{
-        return FaveIcon.createFaveIcon(self, icon: faveIconImage,color: normalColor)
-    }
     
     
     fileprivate func createSparks(_ radius: CGFloat) -> [Spark] {
@@ -142,7 +91,6 @@ extension FaveButton{
 
 
 // MARK: utils
-
 extension FaveButton{
     fileprivate func dotColors(atIndex index: Int) -> DotColors{
         if case let delegate as FaveButtonDelegate = delegate , nil != delegate.faveButtonDotColors(self){
@@ -156,68 +104,27 @@ extension FaveButton{
 }
 
 
-// MARK: actions
-extension FaveButton{
-    func addActions(){
-        self.addTarget(self, action: #selector(toggle(_:)), for: .touchUpInside)
-    }
-    
-    func toggle(_ sender: FaveButton){
-        sender.isSelected = !sender.isSelected
-        
-        guard case let delegate as FaveButtonDelegate = self.delegate else{
-            return
-        }
-        
-        let delay = DispatchTime.now() + Double(Int64(Double(NSEC_PER_SEC) * Const.duration)) / Double(NSEC_PER_SEC)
-        DispatchQueue.main.asyncAfter(deadline: delay){
-            delegate.faveButton(sender, didSelected: sender.isSelected)
-        }
-    }
-}
-
-
 // MARK: animation
 extension FaveButton{
-    fileprivate func animateSelect(_ isSelected: Bool, duration: Double){
-        let color  = isSelected ? selectedColor : normalColor
+    public func animate(withDuration duration: Double, completion: (()->Void)?){
+        let radius           = bounds.size.scaleBy(1.3).width/2 // ring radius
+        let igniteFromRadius = radius*0.8
+        let igniteToRadius   = radius*1.1
         
-        faveIcon.animateSelect(isSelected, fillColor: color, duration: duration, delay: Const.faveIconShowDelay)
+        let ring   = Ring.createRing(self, radius: 0.01, lineWidth: 3, fillColor: self.circleFromColor)
+        let sparks = createSparks(igniteFromRadius)
         
-        if isSelected{
-            let radius           = bounds.size.scaleBy(1.3).width/2 // ring radius
-            let igniteFromRadius = radius*0.8
-            let igniteToRadius   = radius*1.1
-            
-            let ring   = Ring.createRing(self, radius: 0.01, lineWidth: 3, fillColor: self.circleFromColor)
-            let sparks = createSparks(igniteFromRadius)
-            
-            ring.animateToRadius(radius, toColor: circleToColor, duration: Const.expandDuration, delay: 0)
-            ring.animateColapse(radius, duration: Const.collapseDuration, delay: Const.expandDuration)
-
-            sparks.forEach{
-                $0.animateIgniteShow(igniteToRadius, duration:0.4, delay: Const.collapseDuration/3.0)
-                $0.animateIgniteHide(0.7, delay: 0.2)
-            }
+        ring.animateToRadius(radius, toColor: circleToColor, duration: Const.expandDuration, delay: 0)
+        ring.animateColapse(radius, duration: Const.collapseDuration, delay: Const.expandDuration)
+        
+        sparks.forEach{
+            $0.animateIgniteShow(igniteToRadius, duration:0.4, delay: Const.collapseDuration/3.0)
+            $0.animateIgniteHide(0.7, delay: 0.2)
+        }
+        
+        let delay = DispatchTime.now() + Double(Int64(Double(NSEC_PER_SEC) * duration)) / Double(NSEC_PER_SEC)
+        DispatchQueue.main.asyncAfter(deadline: delay){
+            completion?()
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

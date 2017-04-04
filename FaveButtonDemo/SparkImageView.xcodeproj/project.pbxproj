@@ -67,7 +67,7 @@
 		261A6A1F1D1DF8DB0040EBBC /* Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Init.swift; sourceTree = "<group>"; };
 		261A6A201D1DF8DB0040EBBC /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
 		261A6A211D1DF8DB0040EBBC /* Spark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spark.swift; sourceTree = "<group>"; };
-		26FEF3251D0E158100D75731 /* FaveButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaveButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26FEF3251D0E158100D75731 /* SparkImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparkImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FEF3281D0E158100D75731 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26FEF32A1D0E158100D75731 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		26FEF32D1D0E158100D75731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		26FEF3261D0E158100D75731 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				26FEF3251D0E158100D75731 /* FaveButtonDemo.app */,
+				26FEF3251D0E158100D75731 /* SparkImageView.app */,
 				26FEF33F1D0E159B00D75731 /* FaveButton.framework */,
 			);
 			name = Products;
@@ -187,9 +187,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		26FEF3241D0E158100D75731 /* FaveButtonDemo */ = {
+		26FEF3241D0E158100D75731 /* SparkImageView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26FEF3371D0E158100D75731 /* Build configuration list for PBXNativeTarget "FaveButtonDemo" */;
+			buildConfigurationList = 26FEF3371D0E158100D75731 /* Build configuration list for PBXNativeTarget "SparkImageView" */;
 			buildPhases = (
 				26FEF3211D0E158100D75731 /* Sources */,
 				26FEF3221D0E158100D75731 /* Frameworks */,
@@ -201,9 +201,9 @@
 			dependencies = (
 				26FEF3451D0E159B00D75731 /* PBXTargetDependency */,
 			);
-			name = FaveButtonDemo;
+			name = SparkImageView;
 			productName = FaveButtonDemo;
-			productReference = 26FEF3251D0E158100D75731 /* FaveButtonDemo.app */;
+			productReference = 26FEF3251D0E158100D75731 /* SparkImageView.app */;
 			productType = "com.apple.product-type.application";
 		};
 		26FEF33E1D0E159B00D75731 /* FaveButton */ = {
@@ -236,7 +236,6 @@
 				TargetAttributes = {
 					26FEF3241D0E158100D75731 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 9T9Q2EVV88;
 						LastSwiftMigration = 0800;
 					};
 					26FEF33E1D0E159B00D75731 = {
@@ -246,7 +245,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 26FEF3201D0E158100D75731 /* Build configuration list for PBXProject "FaveButtonDemo" */;
+			buildConfigurationList = 26FEF3201D0E158100D75731 /* Build configuration list for PBXProject "SparkImageView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -259,7 +258,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				26FEF3241D0E158100D75731 /* FaveButtonDemo */,
+				26FEF3241D0E158100D75731 /* SparkImageView */,
 				26FEF33E1D0E159B00D75731 /* FaveButton */,
 			);
 		};
@@ -444,10 +443,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FaveButtonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xhamr.FaveButtonDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = de.alexsteiner.SparkImageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
@@ -461,10 +461,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FaveButtonDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xhamr.FaveButtonDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = de.alexsteiner.SparkImageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
@@ -523,7 +524,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		26FEF3201D0E158100D75731 /* Build configuration list for PBXProject "FaveButtonDemo" */ = {
+		26FEF3201D0E158100D75731 /* Build configuration list for PBXProject "SparkImageView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26FEF3351D0E158100D75731 /* Debug */,
@@ -532,7 +533,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		26FEF3371D0E158100D75731 /* Build configuration list for PBXNativeTarget "FaveButtonDemo" */ = {
+		26FEF3371D0E158100D75731 /* Build configuration list for PBXNativeTarget "SparkImageView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				26FEF3381D0E158100D75731 /* Debug */,
