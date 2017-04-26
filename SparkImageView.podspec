@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SparkImageView"
-  s.version      = "2.1.3"
+  s.version      = "2.1.4"
   s.summary      = "SparkImageView is an iOS cute animated like ImageView written in Swift."
   s.license      = 'MIT'
   s.homepage     = 'https://github.com/alexsteinerde/Spark-ImageView'

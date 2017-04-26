@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,38 +23,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="xpx-bb-eVP" customClass="SparkImageView" customModule="SparkImageView">
-                                <rect key="frame" x="123" y="269" width="128" height="128"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="xpx-bb-eVP" customClass="SparkImageView" customModule="SparkImageView">
+                                <rect key="frame" x="36" y="287" width="93" height="93"/>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="AnB-c3-jnU"/>
-                                    <constraint firstAttribute="width" constant="128" id="IWN-JH-zq1"/>
+                                    <constraint firstAttribute="width" secondItem="xpx-bb-eVP" secondAttribute="height" multiplier="1:1" id="gvq-1n-DHh"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="h3t-JO-cru" appends="YES" id="He4-VY-BS3"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="zoK-U7-9Q0" customClass="SparkImageView" customModule="SparkImageView">
+                                <rect key="frame" x="149" y="287" width="93" height="93"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zoK-U7-9Q0" secondAttribute="height" multiplier="1:1" id="UHg-xn-oNC"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VB5-eL-81H" appends="YES" id="V5F-wm-Wif"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="Cxe-AK-Phq" customClass="SparkImageView" customModule="SparkImageView">
+                                <rect key="frame" x="262" y="286.5" width="93" height="93"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Cxe-AK-Phq" secondAttribute="height" multiplier="1:1" id="h98-jd-ns1"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zCm-Bl-5eJ" appends="YES" id="Y6c-tp-eAA"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="xpx-bb-eVP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2q5-Ub-FPp"/>
-                            <constraint firstItem="xpx-bb-eVP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tce-AA-EED"/>
+                            <constraint firstItem="Cxe-AK-Phq" firstAttribute="leading" secondItem="zoK-U7-9Q0" secondAttribute="trailing" constant="20" id="3D2-Wb-mAs"/>
+                            <constraint firstItem="Cxe-AK-Phq" firstAttribute="width" secondItem="Cxe-AK-Phq" secondAttribute="height" multiplier="1:1" id="5ca-Tw-M8T"/>
+                            <constraint firstItem="zoK-U7-9Q0" firstAttribute="leading" secondItem="xpx-bb-eVP" secondAttribute="trailing" constant="20" id="DR6-Qe-gVe"/>
+                            <constraint firstItem="zoK-U7-9Q0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qw7-4E-128"/>
+                            <constraint firstItem="zoK-U7-9Q0" firstAttribute="width" secondItem="Cxe-AK-Phq" secondAttribute="width" id="VO7-PP-3UK"/>
+                            <constraint firstItem="xpx-bb-eVP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="bK2-IP-21S"/>
+                            <constraint firstAttribute="trailing" secondItem="Cxe-AK-Phq" secondAttribute="trailing" constant="20" id="sJG-r4-2Kz"/>
+                            <constraint firstItem="xpx-bb-eVP" firstAttribute="width" secondItem="zoK-U7-9Q0" secondAttribute="width" id="tVB-VZ-crx"/>
+                            <constraint firstItem="Cxe-AK-Phq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wgw-WT-RYL"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="h3t-JO-cru" appends="YES" id="61y-km-W2m"/>
-                        </connections>
                     </view>
                     <connections>
+                        <outlet property="heartView" destination="Cxe-AK-Phq" id="4qQ-AW-mPG"/>
+                        <outlet property="likeView" destination="zoK-U7-9Q0" id="vnc-VG-Dqe"/>
                         <outlet property="starView" destination="xpx-bb-eVP" id="X8P-wf-1ic"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="h3t-JO-cru">
                     <connections>
-                        <action selector="animate:" destination="BYZ-38-t0r" id="O7v-Ms-la0"/>
+                        <action selector="animateStar:" destination="BYZ-38-t0r" id="8ao-m3-9aO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="VB5-eL-81H">
+                    <connections>
+                        <action selector="animateLike:" destination="BYZ-38-t0r" id="6Q9-E3-4fO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="zCm-Bl-5eJ">
+                    <connections>
+                        <action selector="animateHeart:" destination="BYZ-38-t0r" id="kHX-Oh-Xz7"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>
+        <image name="heart" width="128" height="128"/>
+        <image name="like" width="128" height="128"/>
         <image name="star" width="128" height="128"/>
     </resources>
 </document>

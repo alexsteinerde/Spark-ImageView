@@ -11,9 +11,19 @@ import SparkImageView
 
 class ViewController: UIViewController {
     
-    @IBAction func animate(_ sender: Any) {
+    @IBAction func animateStar(_ sender: Any) {
         starView.animate(withDuration: 1, completion: nil)
     }
     
+    @IBAction func animateLike(_ sender: Any) {
+        likeView.animate(withDuration: 1, completion: nil)
+    }
+    
+    @IBAction func animateHeart(_ sender: Any) {
+        heartView.animate(withDuration: 1, completion: nil)
+    }
+    
     @IBOutlet weak var starView: SparkImageView!
+    @IBOutlet weak var likeView: SparkImageView!
+    @IBOutlet weak var heartView: SparkImageView!
 }
