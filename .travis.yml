@@ -1,7 +1,7 @@
-language: objective-c
+language: swift
 osx_image: xcode8
 
-language: objective-c
+language: swift
 osx_image: xcode8
 
 install:
