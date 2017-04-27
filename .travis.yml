@@ -5,10 +5,11 @@ language: objective-c
 osx_image: xcode8
 
 install:
+  - pod install
   - gem install xcpretty
 
 script:
   - set -o pipefail
   - xcodebuild -version
-  - xcodebuild -project FaveButtonDemo/FaveButtonDemo.xcodeproj -scheme "FaveButton" -sdk iphonesimulator10.0 -destination 'platform=iOS Simulator,name=iPhone 6s,OS=10.0'
-      -configuration Release ONLY_ACTIVE_ARCH=NO build | xcpretty -c      
+  - xcodebuild -project FaveButtonDemo/SparkImageView.xcodeproj -scheme "SparkImageView" -sdk iphonesimulator10.0 -destination 'platform=iOS Simulator,name=iPhone 6s,OS=10.0'
+      -configuration Release ONLY_ACTIVE_ARCH=NO build | xcpretty -c
