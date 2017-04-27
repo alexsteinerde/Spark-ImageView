@@ -2,6 +2,7 @@
 
 [![CocoaPods](https://img.shields.io/cocoapods/p/SparkImageView.svg)](https://cocoapods.org/pods/SparkImageView)
 [![CocoaPods](https://img.shields.io/cocoapods/v/SparkImageView.svg)](http://cocoapods.org/pods/SparkImageView)
+![Travis-CI](https://travis-ci.org/alexsteinerde/Spark-ImageView.svg)
 
 Favorite Animated View written in Swift
 
