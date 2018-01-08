@@ -34,11 +34,10 @@ open class SparkImageView: UIImageView {
         static let faveIconShowDelay    = Const.expandDuration + Const.collapseDuration/2.0
         static let dotRadiusFactors     = (first: 0.0633, second: 0.04)
     }
-    
-    @IBInspectable open var dotFirstColor: UIColor   = UIColor(colorLiteralRed: 152/255, green: 219/255, blue: 236/255, alpha: 1)
-    @IBInspectable open var dotSecondColor: UIColor  = UIColor(colorLiteralRed: 247/255, green: 188/255, blue: 48/255,  alpha: 1)
-    @IBInspectable open var circleFromColor: UIColor = UIColor(colorLiteralRed: 221/255, green: 70/255,  blue: 136/255, alpha: 1)
-    @IBInspectable open var circleToColor: UIColor   = UIColor(colorLiteralRed: 205/255, green: 143/255, blue: 246/255, alpha: 1)
+    @IBInspectable open var dotFirstColor: UIColor   = UIColor(red: 152/255, green: 219/255, blue: 236/255, alpha: 1)
+    @IBInspectable open var dotSecondColor: UIColor  = UIColor(red: 247/255, green: 188/255, blue: 48/255,  alpha: 1)
+    @IBInspectable open var circleFromColor: UIColor = UIColor(red: 221/255, green: 70/255,  blue: 136/255, alpha: 1)
+    @IBInspectable open var circleToColor: UIColor   = UIColor(red: 205/255, green: 143/255, blue: 246/255, alpha: 1)
     
     @IBOutlet open weak var delegate: AnyObject?
     

@@ -22,6 +22,7 @@
 		26FEF3331D0E158100D75731 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26FEF3311D0E158100D75731 /* LaunchScreen.storyboard */; };
 		26FEF3421D0E159B00D75731 /* SparkImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 26FEF3411D0E159B00D75731 /* SparkImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26FEF34F1D0E177900D75731 /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FEF34E1D0E177900D75731 /* ImageAsset.swift */; };
+		FAAA53092003F269005C9AC0 /* SparkImageView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FAAA53082003F269005C9AC0 /* SparkImageView.podspec */; };
 		FAC0B9601E93D1660008A398 /* SparkImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FEF33F1D0E159B00D75731 /* SparkImageView.framework */; };
 		FAC0B9611E93D1660008A398 /* SparkImageView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26FEF33F1D0E159B00D75731 /* SparkImageView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -70,6 +71,7 @@
 		26FEF3411D0E159B00D75731 /* SparkImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparkImageView.h; sourceTree = "<group>"; };
 		26FEF3431D0E159B00D75731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26FEF34E1D0E177900D75731 /* ImageAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
+		FAAA53082003F269005C9AC0 /* SparkImageView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SparkImageView.podspec; path = ../SparkImageView.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		26FEF31C1D0E158100D75731 = {
 			isa = PBXGroup;
 			children = (
+				FAAA53082003F269005C9AC0 /* SparkImageView.podspec */,
 				261A6A181D1DF8DB0040EBBC /* Source */,
 				26FEF3271D0E158100D75731 /* FaveButtonDemo */,
 				26FEF3401D0E159B00D75731 /* FaveButton */,
@@ -223,7 +226,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Jansel Valentin";
 				TargetAttributes = {
 					26FEF3241D0E158100D75731 = {
@@ -233,7 +236,7 @@
 					};
 					26FEF33E1D0E159B00D75731 = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26FEF3331D0E158100D75731 /* LaunchScreen.storyboard in Resources */,
+				FAAA53092003F269005C9AC0 /* SparkImageView.podspec in Resources */,
 				26FEF3301D0E158100D75731 /* Assets.xcassets in Resources */,
 				26FEF32E1D0E158100D75731 /* Main.storyboard in Resources */,
 			);
@@ -342,14 +346,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -389,14 +399,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -464,7 +480,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -480,7 +496,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -492,7 +509,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -507,7 +524,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
